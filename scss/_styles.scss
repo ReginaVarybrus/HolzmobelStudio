@@ -85,11 +85,49 @@ body {
         li {
           // border: 1px solid $diesel;
           padding: 10px 15px;
-          a {
+          .btn {
             text-decoration: none;
             // text-transform: uppercase;
             font-weight: 600;
             color: $diesel;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 45px;
+            margin: 0 0 2em;
+            max-width: 160px;
+            position: relative;
+            text-decoration: none;
+            width: 100%;
+          }
+          .nav-btn {
+            letter-spacing: 0;
+            &:hover,
+            &:active {
+              letter-spacing: 5px;
+            }
+            &:after,
+            &:before {
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              border: 1px solid $diesel;
+              bottom: 0px;
+              content: " ";
+              display: block;
+              margin: 0 auto;
+              position: relative;
+              transition: all 280ms ease-in-out;
+              width: 0;
+            }
+            &:hover:before,
+            &:hover:after {
+              bottom: auto;
+              top: 0;
+              width: 100%;
+              backface-visibility: hidden;
+              border-color: $diesel;
+              transition: width 350ms ease-in-out;
+            }
           }
         }
       }
