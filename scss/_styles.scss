@@ -4,7 +4,8 @@
 body {
   // font-family: "Recursive", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
-  background: $zorba;
+  margin-top: -24px;
+  // background: $zorba;
   // &:before {
   //   z-index: 10001;
   //   line-height: 20px;
@@ -57,17 +58,22 @@ body {
 
 .intro {
   // background: $poloBlue80;
+  position: relative;
   background: linear-gradient(0deg, $poloBlue 20%, $horizon);
   margin: auto;
-  margin: 20px 40px;
+  // margin: 20px 40px;
   height: 100vh;
-  box-shadow: -10px 10px 20px 9px rgba(62, 86, 124, 0.2);
+  min-width: 100%;
+  // box-shadow: -10px 10px 20px 9px rgba(62, 86, 124, 0.2);
+  display: flex;
   .header {
     // background: $eastBay;
     display: flex;
     justify-content: center;
+    height: 170px;
+    width: 75%;
     .header__items {
-      min-width: 1200px;
+      // min-width: 1200px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -83,25 +89,22 @@ body {
         justify-content: space-between;
         list-style-type: none;
         li {
-          // border: 1px solid $diesel;
-          padding: 10px 15px;
-          .btn {
+          position: relative;
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          .nav-btn {
             text-decoration: none;
-            // text-transform: uppercase;
+            text-transform: uppercase;
             font-weight: 600;
             color: $diesel;
             cursor: pointer;
             font-size: 16px;
             font-weight: 400;
             line-height: 45px;
-            margin: 0 0 2em;
-            max-width: 160px;
-            position: relative;
-            text-decoration: none;
-            width: 100%;
-          }
-          .nav-btn {
             letter-spacing: 0;
+            padding: 10px 0;
+            max-width: 250px;
             &:hover,
             &:active {
               letter-spacing: 5px;
@@ -118,27 +121,67 @@ body {
               position: relative;
               transition: all 280ms ease-in-out;
               width: 0;
+              z-index: -1;
             }
             &:hover:before,
-            &:hover:after {
+            &:hover:after,
+            &:active:before,
+            &:active:after {
               bottom: auto;
               top: 0;
-              width: 100%;
+              width: 80%;
               backface-visibility: hidden;
               border-color: $diesel;
               transition: width 350ms ease-in-out;
+              z-index: 1;
             }
           }
         }
       }
-      .header__items__contact {
-        list-style-type: none;
+    }
+  }
+  .intro__items__contact {
+    position: relative;
+    background: linear-gradient(0deg, $alto, $zorba);
+    height: 100vh;
+    width: 25%;
+    ul {
+      position: absolute;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      height: 80px;
+      justify-content: space-between;
+      top: 37px;
+      right: 115px;
+      a {
+        text-decoration: none;
+        color: $diesel;
+        font-size: 16px;
         svg {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           fill: $diesel;
         }
+        span {
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.8s opacity, 0.8s visibility;
+        }
+        &:hover span {
+          opacity: 1;
+          visibility: visible;
+        }
       }
+    }
+  }
+  .splide {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    .splide__slide {
+      width: 200px;
+      height: 200px;
     }
   }
 }

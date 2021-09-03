@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/splide-core.min.css" />
         <link rel="stylesheet" href="css/main.min.css" />
         <title>HolzmobelStudio</title>
     </head>
@@ -57,52 +58,45 @@
                     <a href="#"><img src="img/logo.png" alt="main-logo" /></a>
                     <nav class="header__items__nav">
                         <ul>
-                            <li><a class="btn nav-btn" href="#">Главная</a></li>
-                            <li><a class="btn nav-btn" href="#">Каталог</a></li>
-                            <li><a class="btn nav-btn" href="#">Оплата и доставка</a></li>
-                            <li><a class="btn nav-btn" href="#">О нас</a></li>
-                            <li><a class="btn nav-btn" href="#">Контакты</a></li>
+                            <li><a class="nav-btn" href="#">Главная</a></li>
+                            <li><a class="nav-btn" href="#">Каталог</a></li>
+                            <li><a class="nav-btn" href="#">Доставка</a></li>
+                            <li><a class="nav-btn" href="#">О нас</a></li>
+                            <li><a class="nav-btn" href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <ul class="header__items__contact">
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-telegram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-viber"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-whatsapp"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-phone"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </header>
+            <div class="intro__items__contact">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/holzmobel_studio/">
+                            <svg class="icon">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                            <span>@holzmobel_studio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380938289531">
+                            <svg class="icon">
+                                <use xlink:href="#icon-phone"></use>
+                            </svg>
+                            <span>+38(093) 828 95 31</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="img/IMG_20210204_204241.jpg" alt="first-slide" /></li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <script src="js/splide.min.js"></script>
     </body>
 </html>
