@@ -53,50 +53,91 @@
             </symbol>
         </svg>
         <div class="intro">
-            <header class="header">
+            <header class="container justify-content-center header">
                 <div class="header__items">
                     <a href="#"><img src="img/logo.png" alt="main-logo" /></a>
                     <nav class="header__items__nav">
                         <ul>
                             <li><a class="nav-btn" href="#">Главная</a></li>
+                            <li><a class="nav-btn" href="#">О нас</a></li>
                             <li><a class="nav-btn" href="#">Каталог</a></li>
                             <li><a class="nav-btn" href="#">Доставка</a></li>
-                            <li><a class="nav-btn" href="#">О нас</a></li>
                             <li><a class="nav-btn" href="#">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
+                <div class="header__items__contact">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/holzmobel_studio/">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                                <span>@holzmobel_studio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+380938289531">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-phone"></use>
+                                </svg>
+                                <span>+38(093) 828 95 31</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </header>
-            <div class="intro__items__contact">
+            <div class="container justify-content-around intro__content">
+                <div class="intro__content__text">
+                    <h1>Holzmöbel</h1>
+                    <h2>Studio</h2>
+                    <p>Мебель из натуральных материалов, сделанная с любовью и вниманием к деталям</p>
+                    <button class="intro__content__btn" type="button">Заказать</button>
+                </div>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/IMG_20210204_204241.jpg" alt="first_slide" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/IMG_20210204_204947.jpg" alt="second_slide" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/IMG_20210406_112944.jpg" alt="third_slide" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__items__messengers">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/holzmobel_studio/">
+                        <a href="viber://chat?number=%2B380938289531">
                             <svg class="icon">
-                                <use xlink:href="#icon-instagram"></use>
+                                <use xlink:href="#icon-viber"></use>
                             </svg>
-                            <span>@holzmobel_studio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+380938289531">
+                        <a href="https://telegram.me/Regina_Varybrus">
                             <svg class="icon">
-                                <use xlink:href="#icon-phone"></use>
+                                <use xlink:href="#icon-telegram"></use>
                             </svg>
-                            <span>+38(093) 828 95 31</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/380938289531">
+                            <svg class="icon">
+                                <use xlink:href="#icon-whatsapp"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="img/IMG_20210204_204241.jpg" alt="first-slide" /></li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="intro__trapezoid"></div>
         </div>
         <script src="js/splide.min.js"></script>
+        <script src="js/gallery.js"></script>
     </body>
 </html>

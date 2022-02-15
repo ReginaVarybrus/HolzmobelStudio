@@ -10,6 +10,7 @@
     "license": "ISC",
     "dependencies": {
         "@splidejs/splide": "^2.4.21",
+        "@splidejs/splide-extension-auto-scroll": "^0.3.7",
         "bootstrap": "^5.0.2",
         "browser-sync": "^2.26.13",
         "gulp": "^4.0.2",
