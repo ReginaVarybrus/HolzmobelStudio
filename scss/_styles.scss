@@ -57,6 +57,11 @@ body {
   .hidden {
     visibility: hidden;
   }
+  h3 {
+    font-size: 40px;
+    padding-top: 30px;
+    margin-bottom: 80px;
+  }
 }
 
 .intro {
@@ -330,37 +335,40 @@ body {
   margin: auto;
   height: 440px;
   background: $cultured;
-  .about__us__content {
-    h2 {
-      padding-top: 30px;
-      margin-bottom: 90px;
+  .about__us__icons {
+    padding: 55px 35px;
+    border: 1px solid $darkSilver;
+    border-radius: 50%;
+    background: $darkSilver;
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: $white;
     }
-    .about__us__icons {
-      padding: 55px 35px;
-      border: 1px solid $darkSilver;
-      border-radius: 50%;
+    &:hover {
+      background: none;
       svg {
-        width: 60px;
-        height: 60px;
+        fill: $darkSilver;
       }
     }
-    h4 {
-      margin-top: 60px;
-    }
+  }
+  h4 {
+    margin-top: 60px;
   }
 }
 
 .gallery {
-  height: 1000px;
+  height: 1050px;
   display: flex;
   .gallery__content {
-    margin-top: 100px;
+    margin-top: 70px;
     height: 800px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     .extreme__column {
       display: flex;
       flex-direction: column;
+      height: 800px;
       .extreme__column__content {
         position: relative;
         height: 50%;
@@ -398,6 +406,7 @@ body {
     .middle__column {
       display: flex;
       flex-direction: column;
+      height: 800px;
       .middle__column__content {
         position: relative;
         height: 33.3%;
